@@ -35,9 +35,47 @@ header {
 header nav {
   display: none;
 }
-.show{
+.show {
   display: block;
 }
+
+#hero {
+  background-image: url(img/intro.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.button {
+  background-color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #374a67;
+  border: 1px solid #374a67;
+  border-radius: 5px;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.4s ease;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.button:hover{
+  background: #374a67;
+  color: white;
+}
+
+
+
 @media (min-width: 768px) {
   header nav {
     display: block;
