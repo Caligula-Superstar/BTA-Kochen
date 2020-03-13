@@ -40,7 +40,12 @@ header nav {
 }
 
 #hero {
-  background-image: url(img/intro.jpg);
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url(img/intro.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,12 +74,60 @@ header nav {
   display: inline-block;
 }
 
-.button:hover{
-  background: #374a67;
+.button:hover {
+  background-color: #374a67;
   color: white;
 }
 
+.button-blue {
+  background-color: #374a67;
+  color: white;
+  margin-bottom: 1rem;
+}
 
+.button-blue:hover {
+  background: white;
+  color: #374a67;
+}
+.card h3 a {
+  color: #333;
+  text-decoration: none;
+}
+.card p a {
+  color: #828282;
+  text-decoration: none;
+  display: block;
+  margin: 0 1rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+h2{
+  text-align: center;
+}
+
+#newsletter{
+ background-color: #04122b;
+ color: white;
+ padding: 2rem 1rem;
+ text-align: center;
+}
+h2 span{
+  display: block;
+  margin-top: 2px;
+}
 
 @media (min-width: 768px) {
   header nav {
@@ -92,4 +145,8 @@ header nav {
   nav li {
     margin: 8px;
   }
+  .row{ 
+    display: flex;
+  }
 }
+
