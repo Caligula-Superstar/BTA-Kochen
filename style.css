@@ -37,6 +37,22 @@ header nav {
 }
 .show {
   display: block;
+  position: absolute;
+  top: 64px;
+  background: white;
+  width: 100%;
+  height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.show li{
+  margin: 2rem 0;
+  text-align: center;
+}
+.overflow {
+  overflow: hidden;
 }
 
 #hero {
@@ -114,19 +130,40 @@ header nav {
   overflow: hidden;
 }
 
-h2{
+h2 {
   text-align: center;
 }
 
-#newsletter{
- background-color: #04122b;
- color: white;
- padding: 2rem 1rem;
- text-align: center;
+#newsletter {
+  background-color: #04122b;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
 }
-h2 span{
+h2 span {
   display: block;
   margin-top: 2px;
+}
+
+input {
+  border-radius: 5px;
+  padding: 10px;
+  border-color: #04122b;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.social ul {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.social li{
+  margin: 0 1rem;
 }
 
 @media (min-width: 768px) {
@@ -145,8 +182,14 @@ h2 span{
   nav li {
     margin: 8px;
   }
-  .row{ 
+  .row {
     display: flex;
   }
-}
 
+  footer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    align-items: center;
+  }
+}
